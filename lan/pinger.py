@@ -40,7 +40,7 @@ class Pinger:
                 self._on_connect()
                 
             self._wait()
-    
+
     def ping(self)->bool:
         return os.system(f"ping -c 1 {self._addr}") == 0
 
